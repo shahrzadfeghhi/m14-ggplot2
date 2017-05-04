@@ -1,19 +1,10 @@
 # Exercise 1: ggplot2 basics
-
-# Install and load `ggplot2`
-# You will also want to load `dplyr`
-
-
-# For this exercise you'll be working with the `diamonds` data set included in the ggplot2 library
-# Use `?diamonds` to get more information about this data set (including the column descriptions
-# Also check the _column names_ and the _number of rows_ in the data set
-
-
-# This data set has a lot of rows. To make things a bit more readable,
-# use dplyr's `sample_n()` function to get a random 1000 rows from the data set
-# Store this sample in a variable `diamonds.sample`
-
-
+install.packages("ggplot2")
+library("ggplot2")
+library("dplyr")
+column.names <- colnames(diamonds)
+row.names <- rownames(diamonds)
+diamonds.sample <- sample_n(diamonds, 1000)
 # Start by making a new `ggplot` with the `diamonds.sample` as the data (no geometry yet)
 # What do you see?
 
